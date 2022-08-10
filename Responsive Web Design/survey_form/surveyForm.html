@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+	  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Enter Your First Name: <input type="text" id="name" required placeholder="name"/></label>
+        <label id="email-label">Enter Your Email: <input type="email" id="email" required placeholder="email"/></label>
+        <label id="number-label">Input your age (years): <input type="number" name="age" id="number" min="18" max="120" placeholder="age"/></label>
+        <label>Select your gender
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Female</option>
+            <option value="2">Male</option>
+          </select>
+			  </label>
+      </fieldset>
+      <fieldset>
+        <label><input type="radio" name="pay-method" class="inline" value="credit-card"/> Credit Card</label>
+        <label><input type="radio" name="pay-method" class="inline" value="paypal"/> PayPal</label>
+        <label>Food you like?</label>
+        <input type="checkbox" name="foods" value="pizza" /><label for="pizza">Pizza</label>
+        <input type="checkbox" name="foods" value="pasta" /><label for="pasta">Pasta</label>
+      </fieldset>
+      <fieldset>
+        <label>Provide a bio:
+          <textarea name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+			  </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
